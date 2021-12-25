@@ -159,7 +159,7 @@
 <wire x1="58" y1="124" x2="0" y2="124" width="0" layer="20"/>
 <wire x1="0" y1="124" x2="0" y2="0" width="0" layer="20"/>
 <text x="58.42" y="52.07" size="1.778" layer="25">Bør ha 2oz copper</text>
-<text x="2.54" y="1.27" size="1.778" layer="25" rot="R90">4VOB</text>
+<text x="3.175" y="1.27" size="1.778" layer="25" rot="R90">4VOB</text>
 <hole x="7" y="119" drill="3.2"/>
 <hole x="53" y="119" drill="3.2"/>
 <hole x="53" y="5" drill="3.2"/>
@@ -168,34 +168,34 @@
 <circle x="53" y="5" radius="3" width="0.2" layer="51"/>
 <circle x="53" y="119" radius="3" width="0.2" layer="51"/>
 <circle x="7" y="119" radius="3" width="0.2" layer="51"/>
-<wire x1="54.61" y1="14" x2="54.61" y2="37" width="0.2" layer="51"/>
-<wire x1="54.61" y1="37" x2="54.61" y2="45.25" width="0.2" layer="51"/>
-<wire x1="54.61" y1="45.25" x2="54.61" y2="53.5" width="0.2" layer="51"/>
-<wire x1="54.61" y1="53.5" x2="54.61" y2="61.75" width="0.2" layer="51"/>
-<wire x1="54.61" y1="61.75" x2="54.61" y2="70" width="0.2" layer="51"/>
-<wire x1="54.61" y1="70" x2="54.61" y2="78.25" width="0.2" layer="51"/>
-<wire x1="54.61" y1="78.25" x2="54.61" y2="86.5" width="0.2" layer="51"/>
-<wire x1="54.61" y1="86.5" x2="54.61" y2="94.75" width="0.2" layer="51"/>
-<wire x1="54.61" y1="94.75" x2="54.61" y2="103" width="0.2" layer="51"/>
-<wire x1="54.61" y1="103" x2="54.61" y2="110" width="0.2" layer="51"/>
-<wire x1="54.61" y1="14" x2="57.785" y2="14" width="0.2" layer="51"/>
-<wire x1="54.61" y1="110" x2="57.785" y2="110" width="0.2" layer="51"/>
-<wire x1="54.61" y1="103" x2="57.785" y2="103" width="0.2" layer="51"/>
-<wire x1="54.61" y1="94.75" x2="57.785" y2="94.75" width="0.2" layer="51"/>
-<wire x1="54.61" y1="86.5" x2="57.785" y2="86.5" width="0.2" layer="51"/>
-<wire x1="54.61" y1="78.25" x2="57.785" y2="78.25" width="0.2" layer="51"/>
-<wire x1="54.61" y1="70" x2="57.785" y2="70" width="0.2" layer="51"/>
-<wire x1="54.61" y1="61.75" x2="57.785" y2="61.75" width="0.2" layer="51"/>
-<wire x1="54.61" y1="53.5" x2="57.785" y2="53.5" width="0.2" layer="51"/>
-<wire x1="54.61" y1="45.25" x2="57.785" y2="45.25" width="0.2" layer="51"/>
-<wire x1="54.61" y1="37" x2="57.785" y2="37" width="0.2" layer="51"/>
-<text x="56.515" y="98.875" size="2.1844" layer="51" rot="R90" align="center">L</text>
-<text x="56.515" y="90.625" size="2.1844" layer="51" rot="R90" align="center">N</text>
-<text x="56.515" y="82.375" size="2.1844" layer="51" rot="R90" align="center">G</text>
-<text x="56.515" y="65.875" size="2.1844" layer="51" rot="R270" align="center">V3</text>
-<text x="56.515" y="57.625" size="2.1844" layer="51" rot="R90" align="center">+V2</text>
-<text x="56.515" y="49.385" size="2.1844" layer="51" rot="R90" align="center">COM</text>
-<text x="56.515" y="41.125" size="2.1844" layer="51" rot="R90" align="center">+5V</text>
+<wire x1="54.61" y1="14" x2="54.61" y2="37" width="0.2" layer="25"/>
+<wire x1="54.61" y1="37" x2="54.61" y2="45.25" width="0.2" layer="25"/>
+<wire x1="54.61" y1="45.25" x2="54.61" y2="53.5" width="0.2" layer="25"/>
+<wire x1="54.61" y1="53.5" x2="54.61" y2="61.75" width="0.2" layer="25"/>
+<wire x1="54.61" y1="61.75" x2="54.61" y2="70" width="0.2" layer="25"/>
+<wire x1="54.61" y1="70" x2="54.61" y2="78.25" width="0.2" layer="25"/>
+<wire x1="54.61" y1="78.25" x2="54.61" y2="86.5" width="0.2" layer="25"/>
+<wire x1="54.61" y1="86.5" x2="54.61" y2="94.75" width="0.2" layer="25"/>
+<wire x1="54.61" y1="94.75" x2="54.61" y2="103" width="0.2" layer="25"/>
+<wire x1="54.61" y1="103" x2="54.61" y2="110" width="0.2" layer="25"/>
+<wire x1="54.61" y1="14" x2="57.785" y2="14" width="0.2" layer="25"/>
+<wire x1="54.61" y1="110" x2="57.785" y2="110" width="0.2" layer="25"/>
+<wire x1="54.61" y1="103" x2="57.785" y2="103" width="0.2" layer="25"/>
+<wire x1="54.61" y1="94.75" x2="57.785" y2="94.75" width="0.2" layer="25"/>
+<wire x1="54.61" y1="86.5" x2="57.785" y2="86.5" width="0.2" layer="25"/>
+<wire x1="54.61" y1="78.25" x2="57.785" y2="78.25" width="0.2" layer="25"/>
+<wire x1="54.61" y1="70" x2="57.785" y2="70" width="0.2" layer="25"/>
+<wire x1="54.61" y1="61.75" x2="57.785" y2="61.75" width="0.2" layer="25"/>
+<wire x1="54.61" y1="53.5" x2="57.785" y2="53.5" width="0.2" layer="25"/>
+<wire x1="54.61" y1="45.25" x2="57.785" y2="45.25" width="0.2" layer="25"/>
+<wire x1="54.61" y1="37" x2="57.785" y2="37" width="0.2" layer="25"/>
+<text x="56.515" y="98.875" size="2.1844" layer="25" rot="R90" align="center">L</text>
+<text x="56.515" y="90.625" size="2.1844" layer="25" rot="R90" align="center">N</text>
+<text x="56.515" y="82.375" size="2.1844" layer="25" rot="R90" align="center">G</text>
+<text x="56.515" y="65.875" size="2.1844" layer="25" rot="R270" align="center">V3</text>
+<text x="56.515" y="57.625" size="2.1844" layer="25" rot="R90" align="center">+V2</text>
+<text x="56.515" y="49.385" size="2.1844" layer="25" rot="R90" align="center">COM</text>
+<text x="56.515" y="41.125" size="2.1844" layer="25" rot="R90" align="center">+5V</text>
 <text x="19.05" y="10.795" size="1.778" layer="25" rot="R90">-14</text>
 <text x="23.495" y="10.795" size="1.778" layer="25" rot="R90">+12</text>
 <text x="46.99" y="10.795" size="1.778" layer="25" rot="R90">+13.2</text>
@@ -217,6 +217,18 @@ Voltage regulators
 v1.0</text>
 <wire x1="36.83" y1="12.7" x2="37.465" y2="12.7" width="0.1524" layer="25"/>
 <wire x1="43.815" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="25"/>
+<text x="43.18" y="61.595" size="0.8128" layer="25" rot="R90" align="center">-15V</text>
+<text x="43.18" y="53.34" size="0.8128" layer="25" rot="R90" align="center">+15V</text>
+<text x="43.18" y="45.085" size="0.8128" layer="25" rot="R90" align="center">GND</text>
+<text x="43.18" y="36.83" size="0.8128" layer="25" rot="R90" align="center">+5V</text>
+<text x="44.275" y="81.28" size="2.1844" layer="25" align="center">G</text>
+<text x="44.27" y="89.535" size="2.1844" layer="25" align="center">N</text>
+<text x="44.265" y="97.79" size="2.1844" layer="25" align="center">L</text>
+<text x="49.365" y="64.77" size="2.1844" layer="25" rot="R180" align="center">V3</text>
+<text x="49.69" y="56.515" size="2.1844" layer="25" rot="R180" align="center">+V2</text>
+<text x="49.385" y="48.26" size="2.1844" layer="25" align="center">COM</text>
+<text x="49.68" y="40.005" size="2.1844" layer="25" rot="R180" align="center">+5V</text>
+<text x="56.515" y="25.4" size="1.4224" layer="25" rot="R90" align="center">MEAN WELL RT-85C</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2836,7 +2848,7 @@ Distributor: Bürklin 05 F 270</description>
 <attribute name="VALUE" x="22.733" y="69.723" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-030X075" package3d_urn="urn:adsk.eagle:package:23640/1" value="100nF" x="19.685" y="45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="18.669" y="50.165" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="18.669" y="40.005" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="9" x="-36.195" y="-6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-36.195" y="-6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="16.637" y="49.276" size="1.27" layer="27" ratio="10" rot="R270"/>
@@ -2917,7 +2929,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="N" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="44.45" y="86.5" smashed="yes">
 <attribute name="MF" value="" x="44.45" y="86.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="44.45" y="86.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="42.799" y="88.278" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="OC_FARNELL" value="unknown" x="44.45" y="86.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="44.45" y="86.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.799" y="84.087" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2925,7 +2936,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="L" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="44.45" y="94.75" smashed="yes">
 <attribute name="MF" value="" x="44.45" y="94.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="44.45" y="94.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="42.799" y="96.528" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="OC_FARNELL" value="unknown" x="44.45" y="94.75" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="44.45" y="94.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.799" y="92.337" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2933,7 +2943,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="G" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="44.45" y="78.25" smashed="yes">
 <attribute name="MF" value="" x="44.45" y="78.25" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="44.45" y="78.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="42.799" y="80.028" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="OC_FARNELL" value="unknown" x="44.45" y="78.25" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="44.45" y="78.25" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.799" y="75.837" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2941,7 +2950,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="+15V" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="49.53" y="53.5" smashed="yes">
 <attribute name="MF" value="" x="49.53" y="53.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="49.53" y="53.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.879" y="55.278" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="OC_FARNELL" value="unknown" x="49.53" y="53.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="49.53" y="53.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="47.879" y="51.087" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2949,7 +2957,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="-15V" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="49.53" y="61.75" smashed="yes">
 <attribute name="MF" value="" x="49.53" y="61.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="49.53" y="61.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.879" y="63.528" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="OC_FARNELL" value="unknown" x="49.53" y="61.75" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="49.53" y="61.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="47.879" y="59.337" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2964,7 +2971,6 @@ Distributor: Bürklin 05 F 270</description>
 <element name="GND" library="con-faston" library_urn="urn:adsk.eagle:library:144" package="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1" value="PIN2F061.100" x="49.53" y="45.25" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="49.53" y="45.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="49.53" y="45.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="51.181" y="43.472" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="OC_FARNELL" value="unknown" x="49.53" y="45.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="49.53" y="45.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="51.181" y="47.663" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
@@ -3020,24 +3026,23 @@ Distributor: Bürklin 05 F 270</description>
 <contactref element="R1" pad="1"/>
 <wire x1="26.445" y1="5.08" x2="30.405" y2="5.08" width="2.54" layer="16"/>
 <wire x1="34.365" y1="5.08" x2="30.405" y2="5.08" width="2.54" layer="16"/>
-<wire x1="41.91" y1="57.785" x2="41.91" y2="45.085" width="3.81" layer="16"/>
-<wire x1="41.91" y1="35.56" x2="41.91" y2="45.085" width="3.81" layer="16"/>
+<wire x1="41.275" y1="58.42" x2="41.275" y2="45.085" width="3.81" layer="16"/>
+<wire x1="41.275" y1="35.56" x2="41.275" y2="45.085" width="3.81" layer="16"/>
 <wire x1="27.305" y1="58.42" x2="41.275" y2="58.42" width="3.81" layer="16"/>
-<wire x1="41.275" y1="58.42" x2="41.91" y2="57.785" width="3.81" layer="16"/>
 <wire x1="19.685" y1="58.42" x2="27.305" y2="58.42" width="3.81" layer="16"/>
 <wire x1="11.9" y1="63.705" x2="11.9" y2="67.105" width="3.81" layer="16"/>
-<wire x1="27.305" y1="35.56" x2="41.91" y2="35.56" width="3.81" layer="16"/>
+<wire x1="27.305" y1="35.56" x2="41.275" y2="35.56" width="3.81" layer="16"/>
 <wire x1="19.685" y1="43.18" x2="27.305" y2="43.18" width="3.81" layer="16"/>
 <wire x1="10.16" y1="17.145" x2="12.065" y2="17.145" width="1.905" layer="16"/>
 <wire x1="20.32" y1="22.86" x2="17.78" y2="22.86" width="1.905" layer="16"/>
 <wire x1="17.78" y1="22.86" x2="12.065" y2="17.145" width="1.905" layer="16"/>
 <wire x1="20.32" y1="22.86" x2="27.305" y2="22.86" width="1.905" layer="16"/>
 <wire x1="27.305" y1="22.86" x2="27.305" y2="26.67" width="1.905" layer="16"/>
-<wire x1="41.91" y1="26.67" x2="27.305" y2="26.67" width="1.905" layer="16"/>
+<wire x1="41.275" y1="26.67" x2="27.305" y2="26.67" width="1.905" layer="16"/>
 <wire x1="27.305" y1="35.56" x2="19.05" y2="27.305" width="0.6096" layer="16"/>
-<wire x1="41.91" y1="57.785" x2="41.91" y2="58.42" width="3.81" layer="16"/>
+<wire x1="41.275" y1="58.42" x2="41.275" y2="59.055" width="3.81" layer="16"/>
 <wire x1="29.845" y1="73.66" x2="29.845" y2="70.485" width="3.81" layer="16"/>
-<wire x1="41.91" y1="58.42" x2="29.845" y2="70.485" width="3.81" layer="16"/>
+<wire x1="41.275" y1="59.055" x2="29.845" y2="70.485" width="3.81" layer="16"/>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="24.765" y="3.81"/>
 <vertex x="24.765" y="9.525"/>
@@ -3046,16 +3051,16 @@ Distributor: Bürklin 05 F 270</description>
 <vertex x="29.845" y="68.58"/>
 <vertex x="29.845" y="75.565"/>
 <vertex x="31.75" y="75.565"/>
-<vertex x="43.815" y="63.5"/>
-<vertex x="43.815" y="51.435"/>
+<vertex x="43.18" y="64.135"/>
+<vertex x="43.18" y="52.07"/>
 <vertex x="46.355" y="48.895"/>
 <vertex x="52.07" y="48.895"/>
 <vertex x="53.975" y="46.99"/>
 <vertex x="53.975" y="43.18"/>
 <vertex x="52.07" y="41.275"/>
 <vertex x="45.72" y="41.275"/>
-<vertex x="43.815" y="39.37"/>
-<vertex x="43.815" y="16.51"/>
+<vertex x="43.18" y="38.735"/>
+<vertex x="43.18" y="15.875"/>
 <vertex x="36.195" y="8.89"/>
 <vertex x="36.195" y="3.81"/>
 <vertex x="35.56" y="3.175"/>
@@ -3064,7 +3069,7 @@ Distributor: Bürklin 05 F 270</description>
 <contactref element="GND" pad="A2"/>
 <wire x1="52.03" y1="45.25" x2="47.03" y2="45.25" width="1.905" layer="16"/>
 <wire x1="47.03" y1="45.25" x2="46.865" y2="45.085" width="1.905" layer="16"/>
-<wire x1="46.865" y1="45.085" x2="41.91" y2="45.085" width="1.905" layer="16"/>
+<wire x1="46.865" y1="45.085" x2="41.275" y2="45.085" width="1.905" layer="16"/>
 <wire x1="19.05" y1="55.245" x2="19.05" y2="57.785" width="0.6096" layer="16"/>
 <wire x1="19.05" y1="57.785" x2="19.685" y2="58.42" width="0.6096" layer="16"/>
 <wire x1="11.9" y1="67.105" x2="11.9" y2="72.225" width="3.81" layer="16"/>
@@ -3073,9 +3078,9 @@ Distributor: Bürklin 05 F 270</description>
 <wire x1="19.05" y1="72.39" x2="22.225" y2="69.215" width="3.81" layer="16"/>
 <wire x1="22.225" y1="69.215" x2="29.845" y2="69.215" width="3.81" layer="16"/>
 <wire x1="29.845" y1="69.215" x2="29.845" y2="73.66" width="3.81" layer="16"/>
-<wire x1="41.91" y1="35.56" x2="41.91" y2="26.67" width="3.81" layer="16"/>
-<wire x1="36.83" y1="20.32" x2="41.91" y2="25.4" width="3.81" layer="16"/>
-<wire x1="41.91" y1="25.4" x2="41.91" y2="26.67" width="3.81" layer="16"/>
+<wire x1="41.275" y1="35.56" x2="41.275" y2="26.67" width="3.81" layer="16"/>
+<wire x1="36.83" y1="20.32" x2="41.275" y2="24.765" width="3.81" layer="16"/>
+<wire x1="41.275" y1="24.765" x2="41.275" y2="26.67" width="3.81" layer="16"/>
 <wire x1="27.305" y1="43.18" x2="40.005" y2="43.18" width="3.81" layer="16"/>
 </signal>
 <signal name="-15V">
