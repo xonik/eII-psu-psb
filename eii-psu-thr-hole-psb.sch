@@ -692,6 +692,44 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
+<package name="XSD1226-005">
+<description>Heat sink,
+&lt;br&gt;&lt;br&gt;
+JLCPCB Part #C116600
+&lt;br&gt;&lt;br&gt;
+XSD1226-005
+&lt;br&gt;&lt;br&gt;
+M3 hole 17.2mm up from bottom, fits TO-220</description>
+<wire x1="-6.75" y1="0" x2="6.75" y2="0" width="0.127" layer="21"/>
+<wire x1="6.75" y1="0" x2="6.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="0" x2="-6.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-4.5" x2="7.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7.75" y1="-4.5" x2="-6.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7.75" y1="-4.5" x2="-7.75" y2="6" width="0.127" layer="21"/>
+<wire x1="7.75" y1="-4.5" x2="7.75" y2="6" width="0.127" layer="21"/>
+<wire x1="-7.75" y1="6" x2="-6.75" y2="6" width="0.127" layer="21"/>
+<wire x1="6.75" y1="6" x2="7.75" y2="6" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="6" x2="-6.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="6" x2="6.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="1.5" x2="-5.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="5.25" y1="1.5" x2="6.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="6" x2="-5.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="5.25" y1="6" x2="5.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="6" x2="-4.25" y2="6" width="0.127" layer="21"/>
+<wire x1="4.25" y1="6" x2="5.25" y2="6" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="6" x2="-4.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="4.25" y1="6" x2="4.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="1.5" x2="-2.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="1.5" x2="4.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="6" x2="-2.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="6" x2="2.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="6" x2="-1.75" y2="6" width="0.127" layer="21"/>
+<wire x1="1.75" y1="6" x2="2.75" y2="6" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="6" x2="-1.75" y2="3.75" width="0.127" layer="21"/>
+<wire x1="1.75" y1="6" x2="1.75" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="3.75" x2="1.75" y2="3.75" width="0.127" layer="21"/>
+<pad name="H" x="0" y="2" drill="1.5" shape="long"/>
+</package>
 <package name="SK95">
 <description>Fisher SK95 heatsink</description>
 <pad name="H" x="0" y="2.6" drill="1.5"/>
@@ -842,13 +880,18 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK95">
-<description>Fisher SK95 Heatsink</description>
+<deviceset name="HEATSINK">
+<description>TO-220 Heatsinks</description>
 <gates>
 <gate name="G$1" symbol="HEATSINK-J" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="V" package="SK95">
+<device name="SK95" package="SK95">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="XSD" package="XSD1226-005">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -18129,8 +18172,8 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </classes>
 <parts>
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="TV" package3d_urn="urn:adsk.eagle:package:16417/2" technology="12" value="7812TV"/>
-<part name="U$1" library="joakim" deviceset="LD1085V" device="3" value="LD1085V3"/>
-<part name="U$2" library="joakim" deviceset="LM2991" device="V" value="LM2991V"/>
+<part name="IC1" library="joakim" deviceset="LD1085V" device="3" value="LD1085V3"/>
+<part name="IC3" library="joakim" deviceset="LM2991" device="V" value="LM2991V"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="470uF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="470uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="470uF"/>
@@ -18175,9 +18218,9 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <part name="+5V" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
 <part name="GND" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="KK1" library="joakim" deviceset="SK95" device="V"/>
-<part name="KK2" library="joakim" deviceset="SK95" device="V"/>
-<part name="KK3" library="joakim" deviceset="SK95" device="V"/>
+<part name="KK1" library="joakim" deviceset="HEATSINK" device="XSD"/>
+<part name="KK2" library="joakim" deviceset="HEATSINK" device="XSD"/>
+<part name="KK3" library="joakim" deviceset="HEATSINK" device="XSD"/>
 </parts>
 <sheets>
 <sheet>
@@ -18193,11 +18236,11 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <attribute name="NAME" x="55.88" y="64.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="55.88" y="61.595" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="63.5" y="101.6" smashed="yes">
+<instance part="IC1" gate="G$1" x="63.5" y="101.6" smashed="yes">
 <attribute name="NAME" x="55.88" y="107.315" size="1.778" layer="95"/>
 <attribute name="VALUE" x="55.88" y="104.775" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="63.5" y="27.94" smashed="yes">
+<instance part="IC3" gate="G$1" x="63.5" y="27.94" smashed="yes">
 <attribute name="NAME" x="55.88" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="55.88" y="31.115" size="1.778" layer="96"/>
 </instance>
@@ -18427,7 +18470,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="ADJ"/>
+<pinref part="IC3" gate="G$1" pin="ADJ"/>
 <wire x1="68.58" y1="20.32" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="7.62" x2="78.74" y2="7.62" width="0.1524" layer="91"/>
@@ -18446,11 +18489,11 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="ON"/>
+<pinref part="IC3" gate="G$1" pin="ON"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18516,7 +18559,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </net>
 <net name="-15V" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="VI"/>
+<pinref part="IC3" gate="G$1" pin="VI"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
@@ -18544,7 +18587,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="C1" gate="G$1" pin="+"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VI"/>
+<pinref part="IC1" gate="G$1" pin="VI"/>
 <wire x1="43.18" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <junction x="43.18" y="101.6"/>
 <wire x1="-2.54" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
@@ -18562,7 +18605,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <label x="132.08" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VO"/>
+<pinref part="IC3" gate="G$1" pin="VO"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="27.94" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="+"/>
@@ -18608,7 +18651,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <label x="132.08" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VO"/>
+<pinref part="IC1" gate="G$1" pin="VO"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="+"/>
@@ -18641,7 +18684,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="ADJ"/>
+<pinref part="IC1" gate="G$1" pin="ADJ"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="93.98" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
