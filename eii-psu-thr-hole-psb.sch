@@ -760,6 +760,20 @@ M3 hole 17.2mm up from bottom, fits TO-220</description>
 <wire x1="-2.2" y1="2.025" x2="-3.25" y2="2.025" width="0.127" layer="21" curve="-180"/>
 <wire x1="-4.25" y1="2.025" x2="-5.3" y2="2.025" width="0.127" layer="21" curve="-180"/>
 </package>
+<package name="FLATSTIFT">
+<description>Flatstift
+&lt;br&gt;&lt;br&gt;
+https://datasheet.lcsc.com/lcsc/1810181718_TE-Connectivity-63849-1_C86469.pdf
+&lt;br&gt;&lt;br&gt;
+JLCPCB: C86469, found under Connectors/Terminals</description>
+<pad name="F" x="-2.54" y="0" drill="1.5" shape="long"/>
+<pad name="F2" x="2.54" y="0" drill="1.5" shape="long"/>
+<wire x1="-3.96" y1="0.42" x2="-3.96" y2="-0.42" width="0.127" layer="21"/>
+<wire x1="3.96" y1="0.42" x2="3.96" y2="-0.42" width="0.127" layer="21"/>
+<rectangle x1="0.42" y1="0.42" x2="1.26" y2="1.56" layer="21"/>
+<rectangle x1="-1.26" y1="-1.56" x2="-0.42" y2="-0.42" layer="21" rot="R180"/>
+<rectangle x1="-1.27" y1="-0.42" x2="1.27" y2="0.42" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="REG_ADJ">
@@ -809,6 +823,12 @@ M3 hole 17.2mm up from bottom, fits TO-220</description>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
 <text x="5.715" y="3.175" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.715" y="0.635" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PIN-1">
+<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -892,6 +912,26 @@ M3 hole 17.2mm up from bottom, fits TO-220</description>
 </technologies>
 </device>
 <device name="XSD" package="XSD1226-005">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLATSTIFT">
+<description>Flatstift
+&lt;br&gt;&lt;br&gt;
+https://datasheet.lcsc.com/lcsc/1810181718_TE-Connectivity-63849-1_C86469.pdf
+&lt;br&gt;&lt;br&gt;
+JLCPCB: C86469, found under Connectors/Terminals</description>
+<gates>
+<gate name="G$1" symbol="PIN-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FLATSTIFT">
+<connects>
+<connect gate="G$1" pin="1" pad="F F2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17893,274 +17933,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="con-faston" urn="urn:adsk.eagle:library:144">
-<description>&lt;b&gt;FASTON Connector&lt;/b&gt; Printed Circuit Board Tabs&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="F061.100" urn="urn:adsk.eagle:footprint:6748/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ Vogt 3866B.68 (F061.100)&lt;br&gt;
-Distributor: Bürklin 05 F 270</description>
-<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.5" y="0" drill="1.4" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.5" y="0" drill="1.4" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.040" urn="urn:adsk.eagle:footprint:6745/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt;&lt;p&gt;
-Flachstecker Typ 00.15 (F061.040)&lt;br&gt;
-Distributor: Bürklin</description>
-<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.060" urn="urn:adsk.eagle:footprint:6746/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ 00.45.1 (F061.060)&lt;br&gt;
-Distributor: Bürklin 05 F 266</description>
-<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
-<pad name="A1" x="-2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.080" urn="urn:adsk.eagle:footprint:6747/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
-Flachstecker Typ Vogt 3866G.68 (F061.080)&lt;br&gt;
-Distributor: Bürklin 05 F 268</description>
-<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
-<pad name="1A" x="-2.5" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.1" diameter="2.54" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.200" urn="urn:adsk.eagle:footprint:6749/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
-Flachstecker Typ 17128.. (F061.200)&lt;br&gt;
-Distributor: Bürklin 05 F 280</description>
-<wire x1="-3.6" y1="0" x2="4.55" y2="0" width="0.8" layer="51"/>
-<wire x1="4.55" y1="0" x2="11.6" y2="0" width="0.8" layer="21"/>
-<pad name="1A" x="-2.5" y="0" drill="1.3" diameter="2.5" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.3" diameter="2.5" shape="long"/>
-<text x="-3.81" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="5.08" y="1.27" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="F061.220" urn="urn:adsk.eagle:footprint:6750/1" library_version="1">
-<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
-Flachstecker Typ 00.32 (F061.220)&lt;br&gt;
-Distributor: Bürklin 05 F 282</description>
-<wire x1="-3.6" y1="0" x2="17.1" y2="0" width="0.8" layer="51"/>
-<wire x1="5.35" y1="0" x2="17.1" y2="0" width="0.8" layer="21"/>
-<pad name="1A" x="-2.5" y="0" drill="1.2" diameter="2.5" shape="long"/>
-<pad name="1B" x="2.5" y="0" drill="1.2" diameter="2.5" shape="long"/>
-<text x="-3.81" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="5.08" y="1.27" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="62409-1" urn="urn:adsk.eagle:footprint:6751/1" library_version="1">
-<description>&lt;b&gt;TAB, FASTON, PC Board, 6,35 (.250) Series&lt;/b&gt;&lt;p&gt;
-Distributor: Digikey - Nb.  A24742-ND&lt;br&gt;
-Source: http://catalog.tycoelectronics.com .. ENG_CD_62409_R.pdf</description>
-<pad name="A1" x="-2.65" y="0" drill="1.5" diameter="1.9" shape="long"/>
-<pad name="A2" x="2.65" y="0" drill="1.5" diameter="1.9" shape="long"/>
-<text x="-3.85" y="1.27" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.85" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.75" y1="-0.4" x2="3.75" y2="0.4" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="F061.100" urn="urn:adsk.eagle:package:6758/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm DIN 46342 Teil 1
-Flachstecker Typ Vogt 3866B.68 (F061.100)
-Distributor: Bürklin 05 F 270</description>
-<packageinstances>
-<packageinstance name="F061.100"/>
-</packageinstances>
-</package3d>
-<package3d name="F061.040" urn="urn:adsk.eagle:package:6756/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm
-Flachstecker Typ 00.15 (F061.040)
-Distributor: Bürklin</description>
-<packageinstances>
-<packageinstance name="F061.040"/>
-</packageinstances>
-</package3d>
-<package3d name="F061.060" urn="urn:adsk.eagle:package:6755/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm DIN 46342 Teil 1
-Flachstecker Typ 00.45.1 (F061.060)
-Distributor: Bürklin 05 F 266</description>
-<packageinstances>
-<packageinstance name="F061.060"/>
-</packageinstances>
-</package3d>
-<package3d name="F061.080" urn="urn:adsk.eagle:package:6757/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm DIN 46342 Teil 1
-Flachstecker Typ Vogt 3866G.68 (F061.080)
-Distributor: Bürklin 05 F 268</description>
-<packageinstances>
-<packageinstance name="F061.080"/>
-</packageinstances>
-</package3d>
-<package3d name="F061.200" urn="urn:adsk.eagle:package:6759/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm DIN 46244
-Flachstecker Typ 17128.. (F061.200)
-Distributor: Bürklin 05 F 280</description>
-<packageinstances>
-<packageinstance name="F061.200"/>
-</packageinstances>
-</package3d>
-<package3d name="F061.220" urn="urn:adsk.eagle:package:6763/1" type="box" library_version="1">
-<description>FASTON 6.3 mm x 0.8 mm DIN 46244
-Flachstecker Typ 00.32 (F061.220)
-Distributor: Bürklin 05 F 282</description>
-<packageinstances>
-<packageinstance name="F061.220"/>
-</packageinstances>
-</package3d>
-<package3d name="62409-1" urn="urn:adsk.eagle:package:6760/1" type="box" library_version="1">
-<description>TAB, FASTON, PC Board, 6,35 (.250) Series
-Distributor: Digikey - Nb.  A24742-ND
-Source: http://catalog.tycoelectronics.com .. ENG_CD_62409_R.pdf</description>
-<packageinstances>
-<packageinstance name="62409-1"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PIN" urn="urn:adsk.eagle:symbol:6744/1" library_version="1">
-<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PIN2" urn="urn:adsk.eagle:component:6765/1" prefix="J" library_version="1">
-<description>&lt;b&gt;Flachstecker Typ Tyco/Electronics/AMP&lt;/b&gt; TAB, FASTON&lt;p&gt;
-Printed Circuit Board Tabs&lt;br&gt;
-Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description>
-<gates>
-<gate name="-1" symbol="PIN" x="0" y="0" swaplevel="1"/>
-</gates>
-<devices>
-<device name="F061.040" package="F061.040">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6756/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.060" package="F061.060">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6755/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.080" package="F061.080">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6757/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.100" package="F061.100">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6758/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.200" package="F061.200">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6759/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="F061.220" package="F061.220">
-<connects>
-<connect gate="-1" pin="1" pad="1A 1B"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6763/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="62409-1" package="62409-1">
-<connects>
-<connect gate="-1" pin="1" pad="A1 A2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6760/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18210,13 +17982,13 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+15V" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-15V" device=""/>
-<part name="N" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="L" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="G" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="+15V" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="-15V" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="+5V" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
-<part name="GND" library="con-faston" library_urn="urn:adsk.eagle:library:144" deviceset="PIN2" device="F061.100" package3d_urn="urn:adsk.eagle:package:6758/1"/>
+<part name="N" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="L" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="G" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="+15V" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="-15V" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="+5V" library="joakim" deviceset="FLATSTIFT" device=""/>
+<part name="GND" library="joakim" deviceset="FLATSTIFT" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="KK1" library="joakim" deviceset="HEATSINK" device="XSD"/>
 <part name="KK2" library="joakim" deviceset="HEATSINK" device="XSD"/>
@@ -18228,8 +18000,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <text x="71.12" y="73.66" size="1.778" layer="97">Adjustable from
 9.8V to 15V
 (=1.25*(1+R2/R1))</text>
-<text x="0" y="68.58" size="1.778" layer="97" rot="R90">8.25 mellom hull</text>
-<text x="-12.7" y="60.96" size="1.778" layer="91">C86469</text>
+<text x="-35.56" y="93.98" size="1.778" layer="97">8.25 mellom hull</text>
 </plain>
 <instances>
 <instance part="IC2" gate="A1" x="63.5" y="58.42" smashed="yes">
@@ -18411,33 +18182,33 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <instance part="SUPPLY4" gate="G$1" x="10.16" y="25.4" smashed="yes">
 <attribute name="VALUE" x="6.985" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="N" gate="-1" x="-7.62" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-5.08" y="91.186" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="-5.08" y="83.312" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="N" gate="G$1" x="-7.62" y="86.36" smashed="yes">
+<attribute name="VALUE" x="-2.54" y="86.614" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-10.16" y="86.868" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="L" gate="-1" x="-7.62" y="81.28" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-5.08" y="86.106" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="-5.08" y="78.232" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="L" gate="G$1" x="-7.62" y="81.28" smashed="yes">
+<attribute name="VALUE" x="-2.54" y="81.534" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-10.16" y="81.788" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="G" gate="-1" x="-7.62" y="71.12" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-5.08" y="75.946" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="-5.08" y="68.072" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="G" gate="G$1" x="-7.62" y="71.12" smashed="yes">
+<attribute name="VALUE" x="-2.54" y="71.374" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-10.16" y="71.628" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="+15V" gate="-1" x="2.54" y="101.6" smashed="yes">
-<attribute name="VALUE" x="0" y="96.774" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="0" y="104.648" size="1.778" layer="95" font="vector"/>
+<instance part="+15V" gate="G$1" x="5.08" y="101.6" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-10.16" y="101.854" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="7.62" y="98.552" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="-15V" gate="-1" x="2.54" y="27.94" smashed="yes">
-<attribute name="VALUE" x="0" y="23.114" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="0" y="30.988" size="1.778" layer="95" font="vector"/>
+<instance part="-15V" gate="G$1" x="2.54" y="27.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.08" y="32.766" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="5.08" y="24.892" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="+5V" gate="-1" x="2.54" y="2.54" smashed="yes">
-<attribute name="VALUE" x="0" y="-2.286" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="0" y="5.588" size="1.778" layer="95" font="vector"/>
+<instance part="+5V" gate="G$1" x="2.54" y="2.54" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.08" y="7.366" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="5.08" y="-0.508" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="GND" gate="-1" x="2.54" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="0" y="-14.986" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="0" y="-7.112" size="1.778" layer="95" font="vector"/>
+<instance part="GND" gate="G$1" x="2.54" y="-10.16" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.08" y="-5.334" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="5.08" y="-13.208" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="GND15" gate="1" x="10.16" y="-12.7" smashed="yes">
 <attribute name="VALUE" x="7.62" y="-15.24" size="1.778" layer="96"/>
@@ -18547,9 +18318,9 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND" gate="-1" pin="1"/>
+<pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="10.16" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -18565,12 +18336,12 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="43.18" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <junction x="43.18" y="27.94"/>
-<wire x1="30.48" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
 <junction x="30.48" y="27.94"/>
 <pinref part="SUPPLY4" gate="G$1" pin="-15V"/>
-<pinref part="-15V" gate="-1" pin="1"/>
-<junction x="-2.54" y="27.94"/>
-<wire x1="10.16" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="-15V" gate="G$1" pin="1"/>
+<junction x="7.62" y="27.94"/>
+<wire x1="10.16" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+15V" class="0">
@@ -18583,19 +18354,18 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <junction x="43.18" y="58.42"/>
 <wire x1="30.48" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <junction x="30.48" y="58.42"/>
-<wire x1="10.16" y1="58.42" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="58.42" x2="10.16" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VI"/>
 <wire x1="43.18" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <junction x="43.18" y="101.6"/>
-<wire x1="-2.54" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
 <junction x="30.48" y="101.6"/>
 <pinref part="SUPPLY3" gate="+15V" pin="+15V"/>
-<junction x="-2.54" y="101.6"/>
-<pinref part="+15V" gate="-1" pin="1"/>
-<wire x1="10.16" y1="101.6" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
+<junction x="10.16" y="101.6"/>
+<pinref part="+15V" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="-14V" class="0">
@@ -18639,9 +18409,9 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="+5V" gate="-1" pin="1"/>
+<pinref part="+5V" gate="G$1" pin="1"/>
 <pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
-<wire x1="10.16" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+13.2V" class="0">
@@ -18662,17 +18432,17 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </net>
 <net name="NEUTRAL" class="0">
 <segment>
-<wire x1="-30.48" y1="86.36" x2="-2.54" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="86.36" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="-27.94" y="86.36" size="1.778" layer="95"/>
-<pinref part="N" gate="-1" pin="1"/>
+<pinref part="N" gate="G$1" pin="1"/>
 <pinref part="X2" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="LIVE" class="0">
 <segment>
 <pinref part="X2" gate="-3" pin="S"/>
-<pinref part="L" gate="-1" pin="1"/>
-<wire x1="-30.48" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="L" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="81.28" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
 <label x="-27.94" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -18699,9 +18469,9 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </net>
 <net name="G" class="0">
 <segment>
-<pinref part="G" gate="-1" pin="1"/>
+<pinref part="G" gate="G$1" pin="1"/>
 <pinref part="X2" gate="-7" pin="S"/>
-<wire x1="-2.54" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="-27.94" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
